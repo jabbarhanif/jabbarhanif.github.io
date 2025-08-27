@@ -1,50 +1,88 @@
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+// App.jsx
+import { lazy, Suspense, useEffect } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 
-function SpinningBox(props) {
+const Projects = lazy(() => import("./components/Projects"));
+
+function SectionContainer({ id, children }) {
   return (
-    <mesh {...props} rotation={[0.5, 0.8, 0]}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial />
-    </mesh>
-  )
+    <section id={id} className="scroll-mt-16 sm:scroll-mt-20">
+      <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6">{children}</div>
+    </section>
+  );
 }
 
 export default function App() {
+  useEffect(() => {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+    const onClick = (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const el = document.querySelector(a.getAttribute("href"));
+      if (!el) return;
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.pushState(null, "", a.getAttribute("href"));
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
-      <header className="max-w-5xl mx-auto px-6 py-8">
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">
-          Hanif Jabbar Ilmi Sumitra— <span className="text-indigo-400">Creative Software Developer</span>
-        </h1>
-        <p className="mt-3 text-gray-300">
-          I build web, mobile, and interactive experiences.
-        </p>
-      </header>
+    <div className="min-h-screen bg-gray-950 text-white selection:bg-indigo-500/30 selection:text-white overflow-x-hidden antialiased">
+      <Header />
+      <main id="main" className="relative">
+        <SectionContainer id="about">
+          <About />
+        </SectionContainer>
 
-      <main className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-xl font-semibold mb-2">About</h2>
-            <p className="text-gray-300">
-              Fokus di web, mobile, game, dan 3D interaction. Suka eksperimen UI modern & realtime.
-            </p>
-          </div>
+        <SectionContainer id="projects">
+          <Suspense
+            fallback={
+              <div className="py-16">
+                <div className="h-8 w-40 rounded bg-white/10 animate-pulse mb-6" />
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="rounded-2xl ring-1 ring-white/10 overflow-hidden">
+                      <div className="aspect-[4/3] bg-white/5 animate-pulse" />
+                      <div className="p-4 space-y-2">
+                        <div className="h-4 w-2/3 bg-white/10 rounded" />
+                        <div className="h-4 w-1/2 bg-white/10 rounded" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            }
+          >
+            <Projects />
+          </Suspense>
+        </SectionContainer>
 
-          <div className="rounded-2xl overflow-hidden ring-1 ring-white/10">
-            <Canvas style={{ height: 360 }}>
-              <ambientLight intensity={0.6} />
-              <directionalLight position={[3, 3, 3]} intensity={1} />
-              <SpinningBox position={[0, 0, 0]} />
-              <OrbitControls />
-            </Canvas>
+        <SectionContainer id="experience">
+          <Experience />
+        </SectionContainer>
+
+        {/* Optional: supaya link Contact tidak dead link */}
+        <SectionContainer id="contact">
+          <div className="py-16 text-white/80">
+            <h2 className="text-2xl sm:text-3xl font-bold">Contact</h2>
+            <p className="mt-2">Email: you@example.com</p>
           </div>
-        </div>
+        </SectionContainer>
       </main>
-
-      <footer className="max-w-5xl mx-auto px-6 py-16 text-sm text-gray-400">
-        © {new Date().getFullYear()} Hanif Jabbar Ilmi
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }
