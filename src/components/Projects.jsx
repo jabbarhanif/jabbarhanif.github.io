@@ -1,5 +1,6 @@
 // Projects.jsx
 import { useMemo, useState } from "react";
+// import Scene3D from "./Scene3D";
 
 const projects = [
     { title: "Web Portfolio", desc: "Portfolio modern dengan React + Three.js", tech: ["React", "Three.js"], href: "#" },
@@ -30,6 +31,17 @@ export default function Projects() {
     return (
         <div className="py-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+                {/* <Scene3D
+                    className="h-full w-full"
+                    photos={[
+                        "/img/face-posx.png",  // 0: +X (kanan)
+                        "/img/face-negx.png",  // 1: -X (kiri)
+                        "/img/face-posy.png",  // 2: +Y (atas)
+                        "/img/face-negy.png",  // 3: -Y (bawah)
+                        "/img/face-posz.png",  // 4: +Z (depan)
+                        "/img/face-negz.png",  // 5: -Z (belakang)
+                    ]}
+                /> */}
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
                     <p className="text-white/60 mt-1">

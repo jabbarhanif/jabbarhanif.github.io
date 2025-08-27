@@ -2,8 +2,10 @@
 import { lazy, Suspense, useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const Projects = lazy(() => import("./components/Projects"));
 
@@ -43,10 +45,23 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-white selection:bg-indigo-500/30 selection:text-white overflow-x-hidden antialiased">
       <Header />
       <main id="main" className="relative">
+
         <SectionContainer id="about">
           <About />
         </SectionContainer>
 
+        {/* Optional: supaya link Contact tidak dead link */}
+
+        <SectionContainer id="contact">
+          <Contact />
+        </SectionContainer>
+        {/* 
+        <SectionContainer id="contact">
+          <div className="text-white/80">
+            <h2 className="text-2xl sm:text-3xl font-bold">Contact</h2>
+            <p className="mt-2">Email: you@example.com</p>
+          </div>
+        </SectionContainer> */}
         <SectionContainer id="projects">
           <Suspense
             fallback={
@@ -74,15 +89,9 @@ export default function App() {
           <Experience />
         </SectionContainer>
 
-        {/* Optional: supaya link Contact tidak dead link */}
-        <SectionContainer id="contact">
-          <div className="py-16 text-white/80">
-            <h2 className="text-2xl sm:text-3xl font-bold">Contact</h2>
-            <p className="mt-2">Email: you@example.com</p>
-          </div>
-        </SectionContainer>
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
