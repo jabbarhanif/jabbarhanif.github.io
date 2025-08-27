@@ -3,7 +3,7 @@ name: Deploy React app to GitHub Pages
 on:
   push:
     branches:
-      - source   # ganti kalau kamu kerja di branch lain
+      - main   # ganti kalau kamu kerja di branch lain
 
 permissions:
   contents: read
