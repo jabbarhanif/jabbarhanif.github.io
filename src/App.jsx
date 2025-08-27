@@ -15,7 +15,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-white">
       <header className="max-w-5xl mx-auto px-6 py-8">
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">
-          Hanif Jabbar Ilmi — <span className="text-indigo-400">Creative Software Developer</span>
+          Hanif Jabbar Ilmi Sumitra— <span className="text-indigo-400">Creative Software Developer</span>
         </h1>
         <p className="mt-3 text-gray-300">
           I build web, mobile, and interactive experiences.
