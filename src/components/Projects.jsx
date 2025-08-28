@@ -1,16 +1,186 @@
 // Projects.jsx
 import { useMemo, useState } from "react";
-// import Scene3D from "./Scene3D";
 
 const projects = [
-    { title: "Web Portfolio", desc: "Portfolio modern dengan React + Three.js", tech: ["React", "Three.js"], href: "#" },
-    { title: "Mobile App", desc: "Aplikasi Android/iOS dengan Flutter", tech: ["Flutter", "Firebase"], href: "#" },
-    { title: "Game Indie", desc: "Game 2D interaktif dengan Unity", tech: ["Unity", "C#"], href: "#" },
+    // {
+    //     title: "Tes youtube",
+    //     bio: "tes youtube",
+    //     desc: "Aplikasi Android/iOS dengan Flutter. Deskripsi panjang mengenai detail proyek, fitur notifikasi, integrasi API, dll.",
+    //     tech: ["Flutter", "Firebase"],
+    //     href: "https://www.youtube.com/watch?v=dzy2s7cXQ7A&list=RDdzy2s7cXQ7A&start_radio=1",
+    //     preview: { type: "youtube", src: "https://www.youtube.com/watch?v=dzy2s7cXQ7A&list=RDdzy2s7cXQ7A&start_radio=1" }
+    // },
+    {
+        title: "Web Portfolio",
+        bio: "Web untuk meningkatkan kredibilitas & branding personal.",
+        desc: "Perkenalan singkat tentang diri dan bidang keahlian, ringkasan pengalaman kerja atau proyek yang pernah dikerjakan, galeri hasil karya website, aplikasi, atau desain, serta penjelasan singkat mengenai peran dan teknologi yang digunakan. Selain itu juga menampilkan keterampilan utama yang saya kuasai, informasi kontak yang mudah diakses, serta tautan ke media sosial profesional atau repositori kode. Semua bagian ini disusun untuk menunjukkan kemampuan secara nyata sekaligus memperkuat personal branding.",
+        tech: ["React", "Threejs", "Tailwind", "GithubPages"],
+        href: "https://jabbarhanif.github.io/",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "STIKUS PHOTOBOOTH SKETCHBOOK",
+        bio: "Event vaksin jakarta Neo Soho Mall.",
+        tgl: "may 2022",
+        desc: "Permainan ini seperti permainan Osmo monster di iPad. Namun, yang membedakan adalah Osmo Monster berbasis 3D namun Sketchbook Photobooth Stickus berbasis 2D.",
+        tech: ["Unity3D", "C#", "Ci3", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "AL-QUR'AN SCIENCE GAME",
+        bio: "SMPN 22 Surabaya.",
+        tgl: "Mar - May 2023",
+        desc: "Fitur dari aplikasi ini adalah pengenalan Al Qur'an dan sains yang memiliki banyak kesamaan. Dan di mana guru dan siswa dapat berinteraksi dalam permainan untuk menambah keseruan dalam belajar dan mengajar.",
+        tech: ["Unity3D", "C#", "Ci3", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "PLANETARIUM MUSEUM AL LOKA JALA",
+        bio: "Maintenance - Game Tata Surya Dom Museum Loka Jala",
+        tgl: "Aug 2024",
+        desc: "Game edukasi Planet dan bintang-bintang di langit untuk pengunjung museum yang diadakan oleh Angkatan Laut. Edukasi cara membaca arah angin melalui bintang-bintang.",
+        tech: ["Unity3D", "C#", "Blendy Dome VJ"],
+        href: "https://www.youtube.com/watch?v=ZvV76o1iJi8",
+        preview: { type: "youtube", src: "https://www.youtube.com/watch?v=ZvV76o1iJi8" }
+    },
+    {
+        title: "WEB ADMIN AND SERVER PT",
+        bio: "Maintenance - System PT Anghauz Indonesia",
+        tgl: "Feb - Okt 2024",
+        desc: "Fitur dari aplikasi ini adalah administrasi, finance, sales, absensi gps, HRD, inventori, logistic, Accounting, report.",
+        tech: ["Ci3", "Jquery", "VPS Ubuntu", "Wordpress", "DB MySQL"],
+        href: "https://anghauz.com/",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "COMPANY PROFILE",
+        bio: "PT Sumber Tirta Hakiki Indonesia",
+        tgl: "Okt 2024",
+        desc: "Web resmi perusahaan cabang Sumber Tirta Hakiki di indonesia. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, juga menjadi media informasi bagi calon klien, resep masakan dan menampilkan kontak resmi.",
+        tech: ["React", "Laravel", "Tailwind", "Builder AI", "DB MySQL"],
+        href: "https://resep.sthindonesia.com/",
+        preview: { type: "website", src: "https://resep.sthindonesia.com/" }
+    },
+    {
+        title: "COMPANY PROFILE",
+        bio: "PT Mahad Berkah Semesta",
+        tgl: "Jul - Aug 2025",
+        desc: "Web resmi perusahaan. Website ini berperan untuk memperkenalkan identitas, visi misi, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
+        tech: ["React", "Laravel", "Tailwind", "DB MySQL"],
+        href: "https://mahadberkahsemesta.com/",
+        preview: { type: "website", src: "https://mahadberkahsemesta.com/" }
+    },
+    {
+        title: "WEB E-COMMERCE AND SYSTEM INTERAKTIF",
+        bio: "Ifybo Fashion Interaktif – Web E-Commerce & QR System",
+        tgl: "Des 2024",
+        desc: "Sebuah platform e-commerce modern yang menggabungkan fashion dengan teknologi interaktif melalui QR code dinamis. Website ini dirancang responsif, user-friendly, dan dilengkapi sistem autentikasi produk untuk menciptakan pengalaman berbelanja yang unik, aman, dan personal.",
+        tech: ["React", "Laravel", "Tailwind", "DB MySQL"],
+        href: "https://ifybo.com/",
+        preview: { type: "website", src: "https://ifybo.com/" }
+    },
+    {
+        title: "COMPANY PROFILE",
+        bio: "PT Logika Boolean Kreatif",
+        tgl: "Aug 2025",
+        desc: "Web resmi perusahaan. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
+        tech: ["React", "Laravel", "Tailwind", "Threejs", "DB MySQL"],
+        href: "https://logicboolean.com/",
+        preview: { type: "website", src: "https://logicboolean.com/" }
+    },
+    {
+        title: "COMMUNITY PROFILE",
+        bio: "Gicbo Community",
+        tgl: "Des 2024",
+        desc: "Web resmi komunitas. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas komunitas kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
+        tech: ["React", "Laravel", "Tailwind", "DB MySQL"],
+        href: "https://gicbo.com/",
+        preview: { type: "website", src: "https://gicbo.com/" }
+    },
+    {
+        title: "WEB ADMIN, SALES & INVENTORY",
+        bio: "CV Mitra Jaya Abadi",
+        tgl: "Nov 2021 Feb 2022",
+        desc: "Aplikasi ini berfokus pada monitoring penjualan, dimana bagian sales/marketing dapat melakukan pemesanan pembelian dari jarak jauh tanpa perlu khawatir stok di gudang sedang kosong atau tidak.",
+        tech: ["Ci3", "Jquery", "DB MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "LEADERSHIP PSYCHOLOGY GAME",
+        bio: "Thesis Project or Final College Assignment",
+        tgl: "Jun - Nov 2022",
+        desc: "Keunggulan aplikasi ini adalah dapat mengidentifikasi gaya kepemimpinan otoriter dan demokratis, mengembangkan sumber daya manusia desa, dan mengembangkan sumber daya alam desa.",
+        tech: ["Unity3D", "C#", "Ci4", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "J&T EXPRESS DELIVERY GAME",
+        bio: "Anonymous Order Project (J&T)",
+        tgl: "Des 2023 - Jun 2024",
+        desc: "Fitur permainan adalah alur cerita permainan pengiriman berdasarkan cara kerja J&T Express.",
+        tech: ["Unity3D", "C#", "Ci4", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "PIRATE FIGHTING GAME",
+        bio: "Anonymous Order Project",
+        tgl: "Des 2023 - Jun 2024",
+        desc: "Game ini menampilkan pertarungan bajak laut melawan zombi untuk mendapatkan harta karun tersembunyi.",
+        tech: ["Unity3D", "C#", "Ci4", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
+    {
+        title: "WII-MOTE CONSOLE FIGHTING GAME",
+        bio: "Internship Project During 5th Semester of College",
+        tgl: "Feb - Mar 2021",
+        desc: "Fitur aplikasinya adalah pertarungan dengan menggunakan pengendali perangkat wii-mote dimana arah pukulan karakter permainan berdasarkan gerakan pemain yang menggunakan perangkat wii-mote.",
+        tech: ["Unity3D", "C#", "Ci3", "MySQL"],
+        href: "",
+        preview: { type: "image", src: "/img/projects/preview.png" }
+    },
 ];
+// helper: convert link youtube normal → embed
+function toEmbedUrl(url) {
+    try {
+        const u = new URL(url);
+
+        // handle short link: youtu.be/<id>
+        if (u.hostname.includes("youtu.be")) {
+            return `https://www.youtube.com/embed/${u.pathname.slice(1)}`;
+        }
+
+        // handle normal link: youtube.com/watch?v=<id>
+        if (u.searchParams.get("v")) {
+            return `https://www.youtube.com/embed/${u.searchParams.get("v")}`;
+        }
+
+        // handle shorts: youtube.com/shorts/<id>
+        if (u.pathname.startsWith("/shorts/")) {
+            return `https://www.youtube.com/embed/${u.pathname.split("/")[2]}`;
+        }
+
+        // kalau sudah embed, kembalikan apa adanya
+        if (u.pathname.startsWith("/embed/")) {
+            return url;
+        }
+
+        return url; // fallback
+    } catch {
+        return url;
+    }
+}
+
 
 export default function Projects() {
     const [query, setQuery] = useState("");
     const [active, setActive] = useState("All");
+    const [expanded, setExpanded] = useState(null); // track card mana yg expand
 
     const allTech = useMemo(() => {
         const set = new Set();
@@ -23,25 +193,18 @@ export default function Projects() {
         return projects.filter((p) => {
             const byTech = active === "All" || p.tech.includes(active);
             const byText =
-                !q || p.title.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q) || p.tech.join(" ").toLowerCase().includes(q);
+                !q ||
+                p.title.toLowerCase().includes(q) ||
+                p.desc.toLowerCase().includes(q) ||
+                p.tech.join(" ").toLowerCase().includes(q);
             return byTech && byText;
         });
     }, [query, active]);
 
     return (
         <div className="py-16">
+            {/* Header + Filter */}
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-                {/* <Scene3D
-                    className="h-full w-full"
-                    photos={[
-                        "/img/face-posx.png",  // 0: +X (kanan)
-                        "/img/face-negx.png",  // 1: -X (kiri)
-                        "/img/face-posy.png",  // 2: +Y (atas)
-                        "/img/face-negy.png",  // 3: -Y (bawah)
-                        "/img/face-posz.png",  // 4: +Z (depan)
-                        "/img/face-negz.png",  // 5: -Z (belakang)
-                    ]}
-                /> */}
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
                     <p className="text-white/60 mt-1">
@@ -55,7 +218,9 @@ export default function Projects() {
                             <button
                                 key={t}
                                 onClick={() => setActive(t)}
-                                className={`rounded-full px-3 py-1 text-sm ring-1 transition ${active === t ? "bg-white/10 ring-white/20 text-white" : "bg-white/5 ring-white/10 text-white/80 hover:bg-white/10"
+                                className={`rounded-full px-3 py-1 text-sm ring-1 transition ${active === t
+                                    ? "bg-white/10 ring-white/20 text-white"
+                                    : "bg-white/5 ring-white/10 text-white/80 hover:bg-white/10"
                                     }`}
                                 aria-pressed={active === t}
                             >
@@ -65,11 +230,8 @@ export default function Projects() {
                     </div>
 
                     <div className="w-full sm:w-auto">
-                        <label className="sr-only" htmlFor="search-projects">Cari projects</label>
                         <input
-                            id="search-projects"
                             type="search"
-                            inputMode="search"
                             placeholder="Cari…"
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
@@ -79,38 +241,148 @@ export default function Projects() {
                 </div>
             </div>
 
+            {/* Card Grid */}
             <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filtered.map((p, i) => (
-                    <a
+                    <div
                         key={i}
-                        href={p.href}
-                        className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] hover:to-white/[0.06] transition"
+                        className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] transition"
                     >
-                        <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 [mask-image:radial-gradient(80%_120%_at_50%_0%,white,transparent)] bg-[conic-gradient(from_180deg_at_50%_0%,rgba(99,102,241,0.25),rgba(236,72,153,0.25),rgba(99,102,241,0.25))]" />
-                        <div className="aspect-[4/3] bg-white/5 overflow-hidden">
-                            <div className="h-full w-full grid place-items-center text-white/40 text-sm">Preview</div>
+                        {/* Preview */}
+                        <div className="aspect-[4/3] bg-black overflow-hidden">
+                            {p.preview.type === "image" ? (
+                                <img
+                                    src={p.preview.src}
+                                    alt={p.title}
+                                    className="h-full w-full object-cover"
+                                />
+                            ) : p.preview.type === "youtube" ? (
+                                expanded === i ? ( // baru render iframe kalau expanded aktif
+                                    <iframe
+                                        src={toEmbedUrl(p.preview.src)}
+                                        title={p.title}
+                                        className="h-full w-full"
+                                        tabIndex="-1"
+                                        loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                ) : (
+                                    <div className="h-full w-full flex flex-col items-center justify-center text-white/60 text-sm space-y-2 p-4 text-center">
+                                        <span>🌐 Preview tersedia</span>
+                                        <button
+                                            onClick={() => setExpanded(i)} // sama kayak versi tombol
+                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-white text-xs"
+                                        >
+                                            Lihat Preview
+                                        </button>
+                                    </div>
+
+                                )
+                            ) : p.preview.type === "website" ? (
+                                expanded === i ? ( // sama, hanya render saat expand
+                                    <iframe
+                                        src={p.preview.src}
+                                        title={p.title}
+                                        className="h-full w-full"
+                                        tabIndex="-1"
+                                        loading="lazy"
+                                        sandbox="allow-same-origin allow-scripts allow-popups"
+                                    />
+                                ) : (
+                                    <div className="h-full w-full flex flex-col items-center justify-center text-white/60 text-sm space-y-2 p-4 text-center">
+                                        <span>🔒 Website Preview belum ditampilkan</span>
+                                        <button
+                                            onClick={() => setExpanded(i)} // aktifkan iframe pas diklik
+                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-white text-xs"
+                                        >
+                                            Lihat Preview
+                                        </button>
+                                    </div>
+
+                                )
+                            ) : (
+                                <div className="h-full w-full grid place-items-center text-white/40 text-sm">
+                                    No Preview
+                                </div>
+                            )}
                         </div>
+
+                        {/* Content */}
                         <div className="p-5">
-                            <h3 className="text-lg font-semibold text-indigo-300 group-hover:text-indigo-200 transition">{p.title}</h3>
-                            <p className="mt-2 text-sm text-white/70 leading-relaxed">{p.desc}</p>
+                            <h3 className="text-lg font-semibold text-indigo-300">{p.title}</h3>
+
+                            {/* Deskripsi pendek */}
+                            <p className="mt-2 text-sm text-white/70 leading-relaxed line-clamp-2">
+                                {p.bio}
+                            </p>
+                            <ul className="mt-4 flex flex-wrap gap-2">
+                                <li
+                                    className="text-xs rounded-full px-2.5 py-1 ring-1 ring-white/10 bg-white/5 text-white/80"
+                                >
+                                    {p.tgl}
+                                </li>
+                            </ul>
+                            {/* Tech list */}
                             <ul className="mt-4 flex flex-wrap gap-2">
                                 {p.tech.map((t) => (
-                                    <li key={t} className="text-xs rounded-full px-2.5 py-1 ring-1 ring-white/10 bg-white/5 text-white/80">
+                                    <li
+                                        key={t}
+                                        className="text-xs rounded-full px-2.5 py-1 ring-1 ring-white/10 bg-white/5 text-white/80"
+                                    >
                                         {t}
                                     </li>
                                 ))}
                             </ul>
+
+                            {/* Action buttons */}
                             <div className="mt-5 flex items-center justify-between">
-                                <span className="text-xs text-white/50">Klik untuk detail</span>
-                                <span className="inline-flex items-center gap-1 text-sm font-medium text-white/80 group-hover:text-white">
-                                    Lihat
-                                    <svg width="16" height="16" viewBox="0 0 24 24" className="transition -mr-0.5 group-hover:translate-x-0.5">
-                                        <path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </span>
+                                <button
+                                    onClick={() =>
+                                        setExpanded(expanded === i ? null : i)
+                                    }
+                                    className="text-sm text-indigo-300 hover:text-indigo-100 transition"
+                                >
+                                    {expanded === i ? "Tutup" : "Detail"}
+                                </button>
+                                {p.href === "" ? (
+                                    <p></p>
+                                ) : (
+                                    <a
+                                        href={p.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1 text-sm font-medium text-white/80 hover:text-white"
+                                    >
+                                        Lihat
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 24 24"
+                                            className="transition -mr-0.5 group-hover:translate-x-0.5"
+                                        >
+                                            <path
+                                                d="M7 17L17 7M17 7H9M17 7v8"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                fill="none"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </a>
+                                )}
+
                             </div>
+
+                            {/* Deskripsi panjang expand */}
+                            {expanded === i && (
+                                <div className="mt-4 text-sm text-white/70 leading-relaxed border-t border-white/10 pt-3 animate-slideDown">
+                                    {p.desc}
+                                </div>
+                            )}
                         </div>
-                    </a>
+                    </div>
                 ))}
             </div>
 

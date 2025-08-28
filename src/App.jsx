@@ -18,6 +18,15 @@ function SectionContainer({ id, children }) {
 }
 
 export default function App() {
+  // cegah browser auto restore scroll posisi
+  useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0); // selalu ke atas saat pertama render
+  }, []);
+
+  // smooth scroll saat klik anchor link (#about, #contact, dll)
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReduced) return;
@@ -34,6 +43,7 @@ export default function App() {
     return () => document.removeEventListener("click", onClick);
   }, []);
 
+  // kalau ada hash di URL (#about, #contact), scroll ke sana
   useEffect(() => {
     const hash = window.location.hash;
     if (!hash) return;

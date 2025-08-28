@@ -15,7 +15,7 @@ export default function Contact() {
                         {/* WhatsApp */}
                         <li>
                             <a
-                                href="https://wa.me/6281234567890"
+                                href="https://wa.me/6281232461759"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-between rounded-2xl px-4 py-3 ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition
@@ -28,14 +28,14 @@ export default function Contact() {
                                     <MessageCircle className="h-5 w-5" aria-hidden="true" />
                                     <span className="font-semibold !text-white">WhatsApp</span>
                                 </span>
-                                <span className="text-sm text-white/70 group-hover:text-white/90">+62 812-3456-7890</span>
+                                <span className="text-sm text-white/70 group-hover:text-white/90">+62 812-3246-1759</span>
                             </a>
                         </li>
 
                         {/* Email */}
                         <li>
                             <a
-                                href="mailto:you@example.com"
+                                href="mailto:jabb.jbr@gmail.com"
                                 className="group flex items-center justify-between rounded-2xl px-4 py-3 ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition
                            min-h-[44px] touch-manipulation
                            !text-white hover:!text-white visited:!text-white focus:!text-white
@@ -46,14 +46,14 @@ export default function Contact() {
                                     <Mail className="h-5 w-5" aria-hidden="true" />
                                     <span className="font-semibold !text-white">Email</span>
                                 </span>
-                                <span className="text-sm text-white/70 group-hover:text-white/90">you@example.com</span>
+                                <span className="text-sm text-white/70 group-hover:text-white/90">jabb.jbr@gmail.com</span>
                             </a>
                         </li>
 
                         {/* LinkedIn */}
                         <li>
                             <a
-                                href="https://www.linkedin.com/in/username"
+                                href="https://www.linkedin.com/in/jabbar-08aab3261"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-between rounded-2xl px-4 py-3 ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition
@@ -66,14 +66,14 @@ export default function Contact() {
                                     <Linkedin className="h-5 w-5" aria-hidden="true" />
                                     <span className="font-semibold !text-white">LinkedIn</span>
                                 </span>
-                                <span className="text-sm text-white/70 group-hover:text-white/90">@username</span>
+                                <span className="text-sm text-white/70 group-hover:text-white/90">@jabbar-08aab3261</span>
                             </a>
                         </li>
 
                         {/* GitHub */}
                         <li>
                             <a
-                                href="https://github.com/username"
+                                href="https://github.com/jabbarhanif"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-between rounded-2xl px-4 py-3 ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition
@@ -86,7 +86,7 @@ export default function Contact() {
                                     <Github className="h-5 w-5" aria-hidden="true" />
                                     <span className="font-semibold !text-white">GitHub</span>
                                 </span>
-                                <span className="text-sm text-white/70 group-hover:text-white/90">@username</span>
+                                <span className="text-sm text-white/70 group-hover:text-white/90">@jabbarhanif</span>
                             </a>
                         </li>
                     </ul>

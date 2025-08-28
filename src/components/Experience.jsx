@@ -40,7 +40,7 @@ export default function Experience() {
                     <span className="text-indigo-400">Experience</span> Journey
                 </h2>
                 <p className="text-gray-400 max-w-2xl mx-auto">
-                    Beberapa pengalaman kerja & proyek yang membentuk saya menjadi
+                    Beberapa pengalaman kerja yang membentuk saya menjadi
                     developer yang lebih baik.
                 </p>
             </motion.div>

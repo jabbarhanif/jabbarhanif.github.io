@@ -41,13 +41,11 @@ export default function About() {
                 <div>
                     <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Tentang Saya</h2>
                     <p className="mt-4 text-white/80 leading-relaxed">
-                        Saya fokus pada pengembangan <strong>Web</strong>, <strong>Mobile</strong>, <strong>Game</strong>, dan{" "}
-                        <strong>interaksi 3D</strong>. Saya senang bereksperimen dengan UI modern, animasi, serta sistem realtime untuk pengalaman
-                        pengguna yang hidup dan responsif.
+                        Saya adalah developer berfokus pada <strong>Game & Web interaktif</strong> dengan pengalaman selama 3 tahun. Terampil dengan <strong>C#</strong>, <strong>Unity3D</strong>, <strong>ReactJS</strong>, <strong>Flutter</strong>, <strong>Laravel</strong>, dan{" "}<strong>teknologi modern lainnya</strong>. Saya cepat membuat prototipe, suka bereksperimen dengan UI & animasi realtime, serta sering memimpin tim dalam project interaktif — termasuk pembuatan game event untuk klien besar seperti Danone. Saya berorientasi pada inovasi, kecepatan, dan efisiensi, serta berkomitmen menghadirkan pengalaman pengguna yang ramah, responsif, dan berguna bagi masyarakat.
                     </p>
 
                     <ul className="mt-6 flex flex-wrap gap-2">
-                        {["React", "Three.js", "WebGL", "TypeScript", "Tailwind CSS", "Realtime", "Shaders", "UX Motion"].map((tag) => (
+                        {["React", "Tailwind CSS", "Laravel", "Unity3d", "C#", "MySQL", "Flutter", "Linux", "Wordpress", "Arduino", "Phyton"].map((tag) => (
                             <li
                                 key={tag}
                                 className="text-xs sm:text-sm rounded-full px-3 py-1 ring-1 ring-white/15 bg-white/5 text-white/80"
@@ -98,7 +96,7 @@ export default function About() {
                             </Suspense>
                         </div>
 
-                        <div className="absolute bottom-3 left-3 text-xs sm:text-sm text-white/70">Realtime 3D Preview</div>
+                        <div className="absolute bottom-3 left-3 text-xs sm:text-sm text-white/70">3D Preview Images</div>
                         {/* Glow tidak overflow */}
                         <div className="pointer-events-none absolute inset-0 rounded-2xl [mask-image:radial-gradient(white,transparent_65%)] bg-gradient-to-r from-indigo-400/15 via-sky-300/10 to-fuchsia-400/15" />
                     </div>
