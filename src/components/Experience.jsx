@@ -3,26 +3,33 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
     {
-        role: "Software Developer",
-        company: "Logic Boolean",
-        period: "2022 - Present",
-        description:
-            "Membangun aplikasi web, mobile, dan game interaktif. Fokus pada teknologi modern (React, Laravel, Flutter, Three.js).",
+        role: "Azaga Creative Technology | Jl. Tambaksari II no. 4, Surabaya",
+        company: "Software House",
+        period: "May 2021 - Now",
+        description: [
+            "Creative Innovation: Mengidentifikasi, meneliti, dan mengembangkan teknologi baru, teknologi yang masih dalam tahap prototipe, serta teknologi yang sudah ada.",
+            "Fullstack Development and Website Maintenance: Bertanggung jawab untuk mengembangkan aplikasi permainan acara berbasis full-stack untuk Danone, serta sistem administrasi dan inventaris, yang mencakup desain front-end hingga implementasi back-end.",
+            "Technical Support and Code Development: Memberikan dukungan teknis dan berkontribusi pada pengembangan kode di berbagai proyek, memastikan integrasi yang efektif dan solusi optimal yang disesuaikan dengan kebutuhan pengguna.",
+        ],
     },
     {
-        role: "Fullstack Developer",
-        company: "Freelance",
-        period: "2019 - 2022",
-        description:
-            "Mengembangkan website e-commerce, company profile, dan aplikasi custom untuk klien lokal maupun internasional.",
+        role: "Matahari Dept. Store Surabaya | Tunjungan Mall, Royal Mall, Cito Mall",
+        company: "Retail",
+        period: "Okt 2012 - Des 2020",
+        description: [
+            "SALES (2012 - 2017) – Menjual produk sepatu merk Fladeo.",
+            "CHIEF SALES (2017 - 2020) – Mengelola penjualan junior, mencapai target, menampilkan produk, memproses laporan penjualan dan stok.",
+        ],
     },
-    {
-        role: "IT Project Manager",
-        company: "Startup Projects",
-        period: "2021 - 2022",
-        description:
-            "Mengelola tim dev, desain, dan server deployment. Berhasil mengirimkan produk tepat waktu dengan kualitas tinggi.",
-    },
+    // {
+    //     role: "IT Project Manager",
+    //     company: "Startup Projects",
+    //     period: "2021 - 2022",
+    //     description: [
+    //         "Mengelola tim dev, desain, dan server deployment.",
+    //         "Berhasil mengirimkan produk tepat waktu dengan kualitas tinggi.",
+    //     ],
+    // },
 ];
 
 export default function Experience() {
@@ -39,10 +46,6 @@ export default function Experience() {
                 <h2 className="text-3xl sm:text-4xl font-bold mb-3">
                     <span className="text-indigo-400">Experience</span> Journey
                 </h2>
-                <p className="text-gray-400 max-w-2xl mx-auto">
-                    Beberapa pengalaman kerja yang membentuk saya menjadi
-                    developer yang lebih baik.
-                </p>
             </motion.div>
 
             {/* Timeline */}
@@ -68,7 +71,13 @@ export default function Experience() {
                                 <span className="text-indigo-400">{exp.company}</span>
                             </h3>
                             <span className="text-sm text-gray-400">{exp.period}</span>
-                            <p className="mt-3 text-gray-300">{exp.description}</p>
+
+                            {/* List description */}
+                            <ul className="mt-3 list-disc list-inside text-gray-300 space-y-2">
+                                {exp.description.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul>
                         </div>
                     </motion.div>
                 ))}
