@@ -39,9 +39,9 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-y-12 gap-x-10 items-start lg:items-stretch">
                 {/* Teks */}
                 <div>
-                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Tentang Jabbar</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Tentang Kami</h2>
                     <p className="mt-4 text-white/80 leading-relaxed">
-                        Jabbar adalah developer berfokus pada <strong>Game & Web interaktif</strong> dengan pengalaman sejak 2021. Terampil dengan <strong>C#</strong>, <strong>Unity3D</strong>, <strong>ReactJS</strong>, <strong>Flutter</strong>, <strong>Laravel</strong>, dan{" "}<strong>teknologi modern lainnya</strong>. Cepat membuat prototipe, suka bereksperimen dengan UI & animasi realtime, serta sering memimpin tim dalam project interaktif — termasuk pembuatan game event untuk klien besar seperti Danone. Orientasi pada inovasi, kecepatan, dan efisiensi, serta berkomitmen menghadirkan pengalaman pengguna yang ramah dan responsif.
+                        Kami adalah developer berfokus pada <strong>Game & Web interaktif</strong> dengan pengalaman sejak 2021. Terampil dengan <strong>C#</strong>, <strong>Unity3D</strong>, <strong>ReactJS</strong>, <strong>Flutter</strong>, <strong>Laravel</strong>, dan{" "}<strong>teknologi modern lainnya</strong>. Cepat membuat prototipe, suka bereksperimen dengan UI & animasi realtime, serta sering memimpin tim dalam project interaktif — termasuk pembuatan game event untuk klien besar seperti Danone. Orientasi pada inovasi, kecepatan, dan efisiensi, serta berkomitmen menghadirkan pengalaman pengguna yang ramah dan responsif.
                     </p>
 
                     <ul className="mt-6 flex flex-wrap gap-2">
@@ -66,7 +66,7 @@ export default function About() {
                             href="#contact"
                             className="inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold bg-white/5 hover:bg-white/10 ring-1 ring-white/15 text-white/90"
                         >
-                            Hubungi Jabbar
+                            Hubungi Kami
                         </a>
                     </div>
                 </div>
