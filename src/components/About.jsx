@@ -66,7 +66,7 @@ export default function About() {
                             href="#contact"
                             className="inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold bg-white/5 hover:bg-white/10 ring-1 ring-white/15 text-white/90"
                         >
-                            Hubungi Saya
+                            Hubungi Jabbar
                         </a>
                     </div>
                 </div>
