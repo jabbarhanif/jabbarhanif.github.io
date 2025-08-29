@@ -20,7 +20,7 @@
 
 ## 📬 Hubungi Saya
 - 📧 Email → [jabb.jbr@gmail.com](mailto:jabb.jbr@gmail.com)  
-- 💬 WhatsApp → [081232461759](https://wa.me/6281232461759)  
+- 💬 WhatsApp → [+62 81232461759](https://wa.me/6281232461759)  
 
 ---
 
