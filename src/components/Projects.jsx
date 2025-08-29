@@ -13,11 +13,11 @@ const projects = [
     {
         title: "Web Portfolio",
         bio: "Web untuk meningkatkan kredibilitas & branding personal.",
-tgl: "💻",
+        tgl: "💻",
         desc: "Perkenalan singkat tentang diri dan bidang keahlian, ringkasan pengalaman kerja atau proyek yang pernah dikerjakan, galeri hasil karya website, aplikasi, atau desain, serta penjelasan singkat mengenai peran dan teknologi yang digunakan. Selain itu juga menampilkan keterampilan utama yang saya kuasai, informasi kontak yang mudah diakses, serta tautan ke media sosial profesional atau repositori kode. Semua bagian ini disusun untuk menunjukkan kemampuan secara nyata sekaligus memperkuat personal branding.",
         tech: ["React", "Threejs", "Tailwind", "GithubPages"],
         href: "https://jabbarhanif.github.io/",
-        preview: { type: "image", src: "/img/projects/preview.png" }
+        preview: { type: "website", src: "https://jabbarhanif.github.io/" }
     },
     {
         title: "STIKUS PHOTOBOOTH SKETCHBOOK",
