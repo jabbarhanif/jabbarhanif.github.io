@@ -14,7 +14,7 @@
 ---
 
 ## 🛠️ Tech & Tools
-⚡ React • Vite • TailwindCSS • Node.js • GitHub Pages  
+⚡ React • Threejs • TailwindCSS • GitHub Pages  
 
 ---
 
