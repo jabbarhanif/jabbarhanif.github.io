@@ -60,7 +60,7 @@ const projects = [
         bio: "PT Sumber Tirta Hakiki Indonesia",
         tgl: "Okt 2024",
         desc: "Web resmi perusahaan cabang Sumber Tirta Hakiki di indonesia. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, juga menjadi media informasi bagi calon klien, resep masakan dan menampilkan kontak resmi.",
-        tech: ["React", "Laravel", "Tailwind", "Builder AI", "MySQL"],
+        tech: ["React", "Laravel11", "Tailwind", "Builder AI", "MySQL"],
         href: "https://sthindonesia.com/",
         preview: { type: "website", src: "https://resep.sthindonesia.com/" }
     },
@@ -69,7 +69,7 @@ const projects = [
         bio: "PT Mahad Berkah Semesta",
         tgl: "Jul - Aug 2025",
         desc: "Web resmi perusahaan. Website ini berperan untuk memperkenalkan identitas, visi misi, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
-        tech: ["React", "Laravel", "Tailwind", "MySQL"],
+        tech: ["React", "Laravel12", "Tailwind", "MySQL"],
         href: "https://mahadberkahsemesta.com/",
         preview: { type: "website", src: "https://mahadberkahsemesta.com/" }
     },
@@ -78,7 +78,7 @@ const projects = [
         bio: "Ifybo Fashion Interaktif – Web E-Commerce & QR System",
         tgl: "Des 2024",
         desc: "Sebuah platform e-commerce modern yang menggabungkan fashion dengan teknologi interaktif melalui QR code dinamis. Website ini dirancang responsif, user-friendly, dan dilengkapi sistem autentikasi produk untuk menciptakan pengalaman berbelanja yang unik, aman, dan personal.",
-        tech: ["React", "Laravel", "Tailwind", "MySQL"],
+        tech: ["React", "Laravel12", "Tailwind", "MySQL"],
         href: "https://ifybo.com/",
         preview: { type: "website", src: "https://ifybo.com/" }
     },
@@ -87,7 +87,7 @@ const projects = [
         bio: "PT Logika Boolean Kreatif",
         tgl: "Aug 2025",
         desc: "Web resmi perusahaan. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
-        tech: ["React", "Laravel", "Tailwind", "Threejs", "MySQL"],
+        tech: ["React", "Laravel12", "Tailwind", "Threejs", "MySQL"],
         href: "https://logicboolean.com/",
         preview: { type: "website", src: "https://logicboolean.com/" }
     },
@@ -96,7 +96,7 @@ const projects = [
         bio: "Gicbo Community",
         tgl: "Des 2024",
         desc: "Web resmi komunitas. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas komunitas kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
-        tech: ["React", "Laravel", "Tailwind", "MySQL"],
+        tech: ["React", "Laravel12", "Tailwind", "MySQL"],
         href: "https://gicbo.com/",
         preview: { type: "website", src: "https://gicbo.com/" }
     },
