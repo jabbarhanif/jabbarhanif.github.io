@@ -60,7 +60,7 @@ const projects = [
         bio: "PT Sumber Tirta Hakiki Indonesia",
         tgl: "Okt 2024",
         desc: "Web resmi perusahaan cabang Sumber Tirta Hakiki di indonesia. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas perusahaan kepada publik. Selain sebagai sarana promosi, juga menjadi media informasi bagi calon klien, resep masakan dan menampilkan kontak resmi.",
-        tech: ["React", "Laravel11", "Tailwind", "Builder AI", "MySQL"],
+        tech: ["React", "Laravel11", "Tailwind", "MySQL"],
         href: "https://sthindonesia.com/",
         preview: { type: "website", src: "https://resep.sthindonesia.com/" }
     },
