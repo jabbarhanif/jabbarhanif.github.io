@@ -131,7 +131,7 @@ const projects = [
         preview: { type: "image", src: "/img/projects/preview.png" }
     },
     {
-        title: "Dummy koleksi",
+        title: "DUMMY KOLEKSI FRONT END",
         bio: "Front end Authentikasi Flutter.",
         tgl: "💻",
         desc: "Project dummy front end menggunakan flutter dengan fitur authentikasi. Login (- Email: jabb.boolean@gmail.com - Password: password - Role: superadmin - Email: dev.logicboolean@gmail.com - Password: password - Role: staff_outlet).",
@@ -140,10 +140,10 @@ const projects = [
         preview: { type: "website", src: "https://flutterkopio.gicbo.com/" }
     },
     {
-        title: "Dummy koleksi API",
+        title: "DUMMY KOLEKSI API",
         bio: "Back end API Swagger.",
         tgl: "💻",
-        desc: "Project dummy back end menggunakan Laravel 11 dan swagger.",
+        desc: "Project dummy back end menggunakan Laravel 11 dan Swagger. Login (- Email: jabb.boolean@gmail.com - Password: password - Role: superadmin - Email: dev.logicboolean@gmail.com - Password: password - Role: staff_outlet).",
         tech: ["Laravel", "Swagger", "Tes"],
         href: "https://apikopio.gicbo.com/",
         preview: { type: "website", src: "https://apikopio.gicbo.com/" }
