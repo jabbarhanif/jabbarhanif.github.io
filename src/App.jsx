@@ -56,7 +56,7 @@ export default function App() {
       <Header />
       <main id="main" className="relative">
 
-        <SectionContainer id="about">
+        <SectionContainer id="profil">
           <About />
         </SectionContainer>
 
