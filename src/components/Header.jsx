@@ -118,7 +118,7 @@ export default function Header() {
                             onClick={() => setOpen((v) => !v)}
                             className="lg:hidden inline-flex h-16 w-16 items-center justify-center rounded-2xl
              ring-2 ring-white/50 bg-white/10 hover:bg-white/15 active:bg-white/20
-             text-white shadow-lg transition
+             text-gray-900 dark:text-gray-200 shadow-lg transition
              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
                             aria-label="Toggle menu"
                             aria-expanded={open}

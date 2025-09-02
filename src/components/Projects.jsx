@@ -220,8 +220,8 @@ export default function Projects() {
                                 key={t}
                                 onClick={() => setActive(t)}
                                 className={`rounded-full px-3 py-1 text-sm ring-1 transition ${active === t
-                                    ? "bg-white/10 ring-white/20 text-white"
-                                    : "bg-white/5 ring-white/10 text-white/80 hover:bg-white/10"
+                                    ? "bg-white/10 ring-white/20 text-gray-900 dark:text-gray-200"
+                                    : "bg-white/5 ring-white/10 text-gray-900 dark:text-gray-200 hover:bg-white/10"
                                     }`}
                                 aria-pressed={active === t}
                             >
@@ -273,7 +273,7 @@ export default function Projects() {
                                         <span>🌐 Preview tersedia</span>
                                         <button
                                             onClick={() => setExpanded(i)} // sama kayak versi tombol
-                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-white text-xs"
+                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-black dark:text-white text-xs"
                                         >
                                             Lihat Preview
                                         </button>
@@ -295,7 +295,7 @@ export default function Projects() {
                                         <span>🔒 Website Preview belum ditampilkan</span>
                                         <button
                                             onClick={() => setExpanded(i)} // aktifkan iframe pas diklik
-                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-white text-xs"
+                                            className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition text-black dark:text-white text-xs"
                                         >
                                             Lihat Preview
                                         </button>
@@ -303,7 +303,7 @@ export default function Projects() {
 
                                 )
                             ) : (
-                                <div className="h-full w-full grid place-items-center text-white/40 text-sm">
+                                <div className="h-full w-full grid place-items-center text-black dark:text-white text-sm">
                                     No Preview
                                 </div>
                             )}
@@ -342,7 +342,7 @@ export default function Projects() {
                                     onClick={() =>
                                         setExpanded(expanded === i ? null : i)
                                     }
-                                    className="text-sm text-indigo-300 hover:text-indigo-100 transition"
+                                    className="text-sm text-black dark:text-indigo-300 hover:text-indigo-100 transition"
                                 >
                                     {expanded === i ? "Tutup" : "Detail"}
                                 </button>
