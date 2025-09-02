@@ -92,14 +92,17 @@ const projects = [
         preview: { type: "website", src: "https://logicboolean.com/" }
     },
     {
-        title: "COMMUNITY PROFILE",
-        bio: "Gicbo Community",
-        tgl: "Des 2024",
-        desc: "Web resmi komunitas. Website ini berperan untuk memperkenalkan identitas, produk atau layanan, serta kredibilitas komunitas kepada publik. Selain sebagai sarana promosi, media informasi bagi calon klien, investor, maupun mitra bisnis untuk mengetahui lebih jauh tentang reputasi dan keunggulan perusahaan, menampilkan kontak resmi dan dapat menjadi pintu masuk untuk peluang kerja sama.",
-        tech: ["React", "Laravel12", "Tailwind", "MySQL"],
-        href: "https://gicbo.com/",
-        preview: { type: "website", src: "https://gicbo.com/" }
-    },
+  "title": "COMMUNITY PROFILE",
+  "bio": "Gicbo Community",
+  "tgl": "Des 2024",
+  "desc": "GICBO adalah komunitas cerdas yang menyediakan layanan bimbel, kursus musik, pelatihan IT, pengembangan agama, hingga solusi digital dan jasa pengiriman barang. Website ini dibangun untuk memperkenalkan identitas komunitas, mempromosikan layanan yang ditawarkan, serta menjadi pusat informasi dan pintu masuk bagi masyarakat, klien, maupun mitra bisnis. GICBO hadir sebagai ekosistem lengkap yang mendukung pengembangan diri dan peluang usaha dalam satu platform.",
+  "tech": ["React", "Laravel12", "Tailwind", "MySQL"],
+  "href": "https://gicbo.com/",
+  "preview": { 
+    "type": "website", 
+    "src": "https://gicbo.com/" 
+  }
+},
     {
         title: "WEB ADMIN, SALES & INVENTORY",
         bio: "CV Mitra Jaya Abadi",
