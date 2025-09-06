@@ -131,6 +131,24 @@ const projects = [
         preview: { type: "image", src: "/img/projects/preview.png" }
     },
     {
+        title: "DUMMY KOLEKSI FRONT END",
+        bio: "Front end Authentikasi Flutter.",
+        tgl: "💻",
+        desc: "Project dummy front end menggunakan flutter dengan fitur authentikasi. Login (- Email: jabb.boolean@gmail.com - Password: password - Role: superadmin - Email: dev.logicboolean@gmail.com - Password: password - Role: staff_outlet).",
+        tech: ["Flutter", "Dummy", "tes"],
+        href: "https://flutterkopio.gicbo.com/",
+        preview: { type: "website", src: "https://flutterkopio.gicbo.com/" }
+    },
+    {
+        title: "DUMMY KOLEKSI API",
+        bio: "Back end API Swagger.",
+        tgl: "💻",
+        desc: "Project dummy back end menggunakan Laravel 11 dan Swagger. Login (- Email: jabb.boolean@gmail.com - Password: password - Role: superadmin - Email: dev.logicboolean@gmail.com - Password: password - Role: staff_outlet).",
+        tech: ["Laravel12", "Swagger", "Dummy", "Tes"],
+        href: "https://apikopio.gicbo.com/",
+        preview: { type: "website", src: "https://apikopio.gicbo.com/" }
+    },
+    {
         title: "PIRATE FIGHTING GAME",
         bio: "Anonymous Order Project",
         tgl: "Des 2023 - Jun 2024",
@@ -141,7 +159,7 @@ const projects = [
     },
     {
         title: "WII-MOTE CONSOLE FIGHTING GAME",
-        bio: "Internship Project During 5th Semester of College",
+        bio: "Internship Project",
         tgl: "Feb - Mar 2021",
         desc: "Fitur aplikasinya adalah pertarungan dengan menggunakan pengendali perangkat wii-mote dimana arah pukulan karakter permainan berdasarkan gerakan pemain yang menggunakan perangkat wii-mote.",
         tech: ["Unity3D", "C#", "Ci3", "MySQL"],

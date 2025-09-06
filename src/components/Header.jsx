@@ -44,7 +44,7 @@ export default function Header() {
     }, []);
 
     const nav = [
-        { label: "About", href: "#about" },
+        { label: "Profil", href: "#profil" },
         { label: "Contact", href: "#contact" },
         { label: "Project", href: "#projects" },
         { label: "Experience", href: "#experience" },

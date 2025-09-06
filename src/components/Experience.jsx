@@ -17,8 +17,8 @@ const experiences = [
         company: "Retail",
         period: "Okt 2012 - Des 2020",
         description: [
-            "SALES (2012 - 2017) – Menjual produk sepatu merk Fladeo.",
-            "CHIEF SALES (2017 - 2020) – Mengelola penjualan junior, mencapai target, menampilkan produk, memproses laporan penjualan dan stok.",
+            "SALES (2012 - 2020) – Menjual produk sepatu merk Fladeo.",
+           // "CHIEF SALES (2017 - 2020) – Mengelola penjualan junior, mencapai target, menampilkan produk, memproses laporan penjualan dan stok.",
         ],
     },
     // {
