@@ -159,7 +159,7 @@ const projects = [
     },
     {
         title: "WII-MOTE CONSOLE FIGHTING GAME",
-        bio: "Internship Project During 5th Semester of College",
+        bio: "Internship Project",
         tgl: "Feb - Mar 2021",
         desc: "Fitur aplikasinya adalah pertarungan dengan menggunakan pengendali perangkat wii-mote dimana arah pukulan karakter permainan berdasarkan gerakan pemain yang menggunakan perangkat wii-mote.",
         tech: ["Unity3D", "C#", "Ci3", "MySQL"],
