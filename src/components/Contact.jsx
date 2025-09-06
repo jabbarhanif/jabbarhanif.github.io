@@ -51,7 +51,7 @@ export default function Contact() {
                         </li>
 
                         {/* LinkedIn */}
-                        <li>
+                        {/* <li>
                             <a
                                 href="https://www.linkedin.com/in/jabbar-08aab3261"
                                 target="_blank"
@@ -68,7 +68,7 @@ export default function Contact() {
                                 </span>
                                 <span className="text-sm text-white/70 group-hover:text-white/90">@jabbar-08aab3261</span>
                             </a>
-                        </li>
+                        </li> */}
 
                         {/* GitHub */}
                         <li>
