@@ -48,7 +48,7 @@ const projects = [
     },
     {
         title: "WEB ADMIN AND SERVER PT",
-        bio: "Maintenance - System PT Anghauz Indonesia",
+        bio: "Maintenance - System perusahaan pintu",
         tgl: "Feb - Okt 2024",
         desc: "Fitur dari aplikasi ini adalah administrasi, finance, sales, absensi gps, HRD, inventori, logistic, Accounting, report.",
         tech: ["Ci3", "Jquery", "VPS Ubuntu", "Wordpress", "MySQL"],
