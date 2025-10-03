@@ -44,16 +44,16 @@ export default function About() {
                         Berfokus pada <strong>Game & Web interaktif</strong> dengan pengalaman sejak 2021. Terampil dengan <strong>C#</strong>, <strong>Unity3D</strong>, <strong>ReactJS</strong>, <strong>Flutter</strong>, <strong>Laravel</strong>, dan{" "}<strong>teknologi modern lainnya</strong>. Cepat membuat prototipe, suka bereksperimen dengan UI & animasi realtime, serta sering memimpin tim dalam project interaktif — termasuk pembuatan game event untuk klien besar seperti Danone. Orientasi pada inovasi, kecepatan, dan efisiensi, serta berkomitmen menghadirkan pengalaman pengguna yang ramah dan responsif.
                     </p>
 
-                    <ul className="mt-6 flex flex-wrap gap-2">
+                    {/* <ul className="mt-6 flex flex-wrap gap-2">
                         {["React", "Tailwind CSS", "Laravel", "Unity3d", "C#", "MySQL", "Flutter", "Linux", "Wordpress", "Arduino", "Phyton"].map((tag) => (
-                            {/* <li
+                             <li
                                 key={tag}
                                 className="text-xs sm:text-sm rounded-full px-3 py-1 ring-1 ring-white/15 bg-white/5 text-white/80"
                             >
                                 {tag}
-                            </li> */}
+                            </li> 
                         ))}
-                    </ul>
+                    </ul> */}
 
                     <div className="mt-8 flex flex-wrap gap-3">
                         <a
