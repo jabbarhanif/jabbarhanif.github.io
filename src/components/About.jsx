@@ -46,12 +46,12 @@ export default function About() {
 
                     <ul className="mt-6 flex flex-wrap gap-2">
                         {["React", "Tailwind CSS", "Laravel", "Unity3d", "C#", "MySQL", "Flutter", "Linux", "Wordpress", "Arduino", "Phyton"].map((tag) => (
-                            <li
+                            {/* <li
                                 key={tag}
                                 className="text-xs sm:text-sm rounded-full px-3 py-1 ring-1 ring-white/15 bg-white/5 text-white/80"
                             >
                                 {tag}
-                            </li>
+                            </li> */}
                         ))}
                     </ul>
 
